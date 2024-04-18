@@ -1,0 +1,1 @@
+ C:\\Users\\User\\Desktop\\torus\\tgf_sample\\.dart_tool\\flutter_build\\8752661ff021332076be047c6bbc9453\\native_assets.yaml: 
