@@ -20,28 +20,28 @@ class DashboardPage extends StatelessWidget {
             childAspectRatio: 1.3,
   crossAxisCount: 2,
   children: [
-    buildCard("Jobs to be booked", "20","since yesterday",Icons.trending_up,"12.1%").onTap((){
+    buildCard("Jobs To be Booked", "20","Since yesterday",Icons.trending_up,"12.1%").onTap((){
         Navigator.push(context, MaterialPageRoute(builder: (context)=>JobsPage()));
     }),
-    buildCard("booking Requested", "12", "since yesterday",Icons.trending_up, "12.1%").onTap((){
+    buildCard("Booking Requested", "12", "Since yesterday",Icons.trending_up, "12.1%").onTap((){
         Navigator.push(context, MaterialPageRoute(builder: (context)=>JobsPage()));
     }),
-    buildCard("booking completed", "1", "since yesterday",Icons.trending_up, "12.1%").onTap((){
+    buildCard("Booking Completed", "1", "Since yesterday",Icons.trending_up, "12.1%").onTap((){
         Navigator.push(context, MaterialPageRoute(builder: (context)=>JobsPage()));
     }),
-    buildCard("Jobs in progress", "84", "since yesterday",Icons.trending_up, "12.1%").onTap((){
+    buildCard("Jobs In Progress", "84", "Since yesterday",Icons.trending_up, "12.1%").onTap((){
         Navigator.push(context, MaterialPageRoute(builder: (context)=>JobsPage()));
     }),
-    buildCard2("Jobs in progress", "84", "since yesterday",Icons.trending_down, "2.3%").onTap((){
+    buildCard2("Jobs In Progress", "84", "Since yesterday",Icons.trending_down, "2.3%").onTap((){
         Navigator.push(context, MaterialPageRoute(builder: (context)=>JobsPage()));
     }),
     buildCard3("Notifications", "61", "0", "Read", "Unread").onTap((){
         Navigator.push(context, MaterialPageRoute(builder: (context)=>JobsPage()));
     }),
-    buildCard2("Pending for delivery", "17", "Since yesterday", Icons.trending_down, "2.3%").onTap((){
+    buildCard2("Pending For Delivery", "17", "Since yesterday", Icons.trending_down, "2.3%").onTap((){
         Navigator.push(context, MaterialPageRoute(builder: (context)=>JobsPage()));
     }),
-    buildCard("Jobs completed", "84", "since yesterday",Icons.trending_up, "12.1%").onTap((){
+    buildCard("Jobs Completed", "84", "Since yesterday",Icons.trending_up, "12.1%").onTap((){
         Navigator.push(context, MaterialPageRoute(builder: (context)=>JobsPage()));
     }),
   

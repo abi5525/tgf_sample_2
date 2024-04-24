@@ -11,9 +11,9 @@ Widget buildtaskCard(
   Color dateColor
 ) {
   return Container(
-    height: 130,
+    height: 100,
     child: Padding(
-        padding: const EdgeInsets.fromLTRB(20,20,20,0),
+        padding: const EdgeInsets.fromLTRB(20,10,20,0),
         child: Card(
           elevation: 2,
           shape: RoundedRectangleBorder(

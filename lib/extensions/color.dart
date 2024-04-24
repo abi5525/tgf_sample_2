@@ -1,13 +1,21 @@
 import 'dart:ui';
 
+import 'package:flutter/material.dart';
+
 const primaryBlue = Color(0xff112456);
 const secondaryBlue = Color(0xff415486);
 
-const hintText = Color(0xffb3b3b3);
+const myGradient = LinearGradient(
+  begin: Alignment.topCenter,
+  end: Alignment.bottomCenter,
+  colors: [Color(0xff415486), Color(0xff112456)],
+);
+
+const hintText = Color(0xff999999);
 
 const titleColor = Color(0xff333333);
 const subTitleColor = Color(0xff737373);
-const cardColor = Color(0xfffcfcfc);
+const cardColor = Color(0xfffcfcfc);  
 
 
 const greenBg = Color(0xffECF6F0);

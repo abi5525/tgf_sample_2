@@ -2,11 +2,12 @@
 import 'package:flutter/material.dart';
 import 'package:styled_widget/styled_widget.dart';
 import 'package:tgf_sample/extensions/color.dart';
+import 'package:tgf_sample/extensions/style.dart';
 
 Widget buildJobCard(BuildContext context) {
   return Container(
-    height: 230,
     margin: EdgeInsets.all(20),
+    height: 230,
     child: Card(
       elevation: 2,
     shape: RoundedRectangleBorder(
@@ -52,7 +53,7 @@ Widget buildJobCard(BuildContext context) {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("ETD"),
+                          Text("ETD",style: BodyStyleDark(),),
                           buildBorder("09/04/24", Colors.transparent, titleColor)
                         ],
                       ),
@@ -60,7 +61,7 @@ Widget buildJobCard(BuildContext context) {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("ETA"),
+                          Text("ETA",style: BodyStyleDark(),),
                           buildBorder("16/04/24", Colors.transparent, titleColor)
                         ],
                       ),
@@ -73,7 +74,7 @@ Widget buildJobCard(BuildContext context) {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [ 
-                          Text("ATD"),
+                          Text("ATD",style: BodyStyleDark(),),
                           buildBorder("09/04/24", Colors.transparent, titleColor)
                         ],
                       ),
@@ -81,7 +82,7 @@ Widget buildJobCard(BuildContext context) {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("ATA"),
+                          Text("ATA",style: BodyStyleDark(),),
                           buildBorder("16/04/24", Colors.transparent, titleColor)
                         ],
                       ),
@@ -92,9 +93,19 @@ Widget buildJobCard(BuildContext context) {
             Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          buildBorder("Dubai", Colors.transparent, titleColor),
+                          Row(
+                            children: [
+                              Text("From : ",style: BodyStyleDark(),),
+                              Text("Dubai",style:BodyStyleDark() ,),
+                            ],
+                          ),
                           Icon(Icons.arrow_forward),
-                          buildBorder("Chennai", Colors.transparent, titleColor)
+                          Row(
+                            children: [
+                              Text("To : ",style: BodyStyleDark(),),
+                              Text("Chennai",style:BodyStyleDark() ,),
+                            ],
+                          )
                         ],
                       )
           ],
